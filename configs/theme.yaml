@@ -1,0 +1,42 @@
+themes:
+  dark:
+    background: "#0d1117"
+    border: "#30363d"
+    title: "#58a6ff"
+    text: "#c9d1d9"
+    muted: "#8b949e"
+    star: "#e3b341"
+    icons:
+      pr: "#3fb950"
+      commit: "#58a6ff"
+      issue: "#f78166"
+      review: "#bc8cff"
+      discussion: "#d2a8ff"
+
+  light:
+    background: "#ffffff"
+    border: "#d0d7de"
+    title: "#0969da"
+    text: "#1f2328"
+    muted: "#656d76"
+    star: "#bf8700"
+    icons:
+      pr: "#1a7f37"
+      commit: "#0969da"
+      issue: "#cf222e"
+      review: "#8250df"
+      discussion: "#8250df"
+
+  transparent:
+    background: "transparent"
+    border: "#30363d"
+    title: "#58a6ff"
+    text: "#c9d1d9"
+    muted: "#8b949e"
+    star: "#e3b341"
+    icons:
+      pr: "#3fb950"
+      commit: "#58a6ff"
+      issue: "#f78166"
+      review: "#bc8cff"
+      discussion: "#d2a8ff"

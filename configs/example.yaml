@@ -1,0 +1,30 @@
+username: "github-username"
+# token: "ghp_..." # or set GITHUB_TOKEN env var
+include-owned: false
+# exclude-owners: ["owner1", "owner2"]
+# exclude-repos: ["owner/repo1", "owner/repo2"]
+# since: "2024-01-01"   # default: 1 year before until
+# until: "2024-12-31"   # default: today
+theme: "dark"            # "dark", "light", or "transparent"
+
+select:
+  pr: true
+  commit: true
+  issue: true
+  review: false
+  discussion: false
+
+weight:
+  pr: 1
+  commit: 1
+  issue: 1
+  review: 1
+  discussion: 1
+
+show:
+  pr: true
+  commit: true
+  issue: true
+  review: false
+  discussion: false
+  top-repo: 3
