@@ -125,7 +125,7 @@ cat config.yaml | ./gh-contrib-stats --output stats.svg
 
 ## Themes
 
-Built-in themes are defined in [`configs/theme.yaml`](configs/theme.yaml):
+Built-in themes are defined in [`internal/config/themes.yaml`](internal/config/themes.yaml):
 
 | Theme | Description |
 |-------|-------------|
