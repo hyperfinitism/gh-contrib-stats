@@ -1,6 +1,6 @@
 # GitHub Contribution Stats
 
-Generate a GitHub-readme-stats style SVG card showing your open-source contribution stats.
+The **GitHub Contribution Stats** (`gh-contrib-stats`) is a Go-based CLI tool, which generates a [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)-like SVG card showing your open-source contribution statistics.
 
 ![sample output](assets/sample-stats.svg)
 
@@ -125,7 +125,7 @@ cat config.yaml | ./gh-contrib-stats --output stats.svg
 
 ## Themes
 
-Built-in themes are defined in [`configs/theme.yaml`](configs/theme.yaml):
+Built-in themes are defined in [`internal/config/themes.yaml`](internal/config/themes.yaml):
 
 | Theme | Description |
 |-------|-------------|
@@ -145,6 +145,7 @@ To define a custom theme, edit [`internal/config/themes.yaml`](internal/config/t
 
 - **Date range:** The GitHub API provides contribution data in at-most-one-year windows. When `since`/`until` span multiple years, gh-contrib-stats automatically queries each year and aggregates the results. If neither field is set, the default window is the past year.
 - **Repository cap:** Each yearly window returns at most 100 repositories per contribution type. For users contributing to more than 100 repositories in a single year, some repositories may be omitted from the per-repo breakdown and top-repos list. The total counts for each contribution type are still accurate when no exclusion filters are applied.
+- **Rate limits:** The GitHub GraphQL API has a [rate limit of 5,000 points per hour](https://docs.github.com/en/graphql/overview/rate-limits-and-query-limits-for-the-graphql-api). Each yearly window consumes one query. Wide date ranges (e.g. 10 years = 10 queries) and frequent runs can exhaust your budget. If you hit a rate limit, wait for the reset window or narrow your `since`/`until` range.
 
 ## Licenses
 
