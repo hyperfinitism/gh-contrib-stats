@@ -1,6 +1,6 @@
 # GitHub Contribution Stats
 
-Generate a GitHub-readme-stats style SVG card showing your open-source contribution stats.
+The **GitHub Contribution Stats** (`gh-contrib-stats`) is a Go-based CLI tool, which generates a [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)-like SVG card showing your open-source contribution statistics.
 
 ![sample output](assets/sample-stats.svg)
 
