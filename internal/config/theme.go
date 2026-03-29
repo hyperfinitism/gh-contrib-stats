@@ -17,7 +17,7 @@ type Theme struct {
 	Title      string            `yaml:"title"`
 	Text       string            `yaml:"text"`
 	Muted      string            `yaml:"muted"`
-	Star       string            `yaml:"star"`
+	Score      string            `yaml:"score"`
 	Icons      map[string]string `yaml:"icons"`
 }
 

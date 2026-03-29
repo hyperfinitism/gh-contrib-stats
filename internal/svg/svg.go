@@ -172,8 +172,8 @@ func Generate(cfg *config.ResolvedConfig, stats *github.ContributionStats) strin
     .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: ` + t.Title + `; }
     .stat-label { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: ` + t.Text + `; }
     .stat-value { font: 700 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: ` + t.Text + `; }
-    .score-label { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: ` + t.Star + `; }
-    .score-value { font: 800 22px 'Segoe UI', Ubuntu, Sans-Serif; fill: ` + t.Star + `; }
+    .score-label { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: ` + t.Score + `; }
+    .score-value { font: 800 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: ` + t.Score + `; }
     .repo-header { font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: ` + t.Muted + `; }
     .repo-name { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: ` + t.Title + `; }
     .repo-score { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: ` + t.Muted + `; }
@@ -199,9 +199,9 @@ func Generate(cfg *config.ResolvedConfig, stats *github.ContributionStats) strin
 
 	// Score.
 	b.WriteString(fmt.Sprintf(`<g transform="translate(0, %d)" class="fade-in">`, y))
-	b.WriteString(iconColorized("star", t.Star))
+	b.WriteString(iconColorized("score", t.Score))
 	b.WriteString(fmt.Sprintf(`<text x="%d" y="13" class="score-label">Total Score:</text>`, iconTextIndent))
-	b.WriteString(fmt.Sprintf(`<text x="115" y="14" class="score-value">%s</text>`, formatNumber(totalScore)))
+	b.WriteString(fmt.Sprintf(`<text x="%d" y="13" class="score-value" text-anchor="end">%s</text>`, cardWidth-2*padding, formatNumber(totalScore)))
 	b.WriteString(`</g>`)
 	b.WriteString("\n")
 	y += scoreHeight
