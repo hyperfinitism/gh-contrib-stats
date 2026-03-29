@@ -5,7 +5,7 @@ include-owned: false
 # exclude-repos: ["owner/repo1", "owner/repo2"]
 # since: "2024-01-01"   # default: 1 year before until
 # until: "2024-12-31"   # default: today
-theme: "dark"            # "dark", "light", or "transparent"
+theme: "transparent"            # "dark", "light", or "transparent"
 
 select:
   pr: true

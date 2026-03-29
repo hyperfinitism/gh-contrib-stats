@@ -20,7 +20,7 @@ The following icons are included:
 - `git-pull-request-16.svg`
 - `issue-opened-16.svg`
 - `repo-16.svg`
-- `star-fill-16.svg`
+- `sparkles-fill-16.svg`
 
 ### License
 

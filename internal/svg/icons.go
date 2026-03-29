@@ -16,7 +16,7 @@ var iconMeta = map[string]string{
 	"issue":      "issue-opened-16.svg",
 	"review":     "code-review-16.svg",
 	"discussion": "comment-discussion-16.svg",
-	"star":       "star-fill-16.svg",
+	"score":      "sparkles-fill-16.svg",
 	"repo":       "repo-16.svg",
 }
 
