@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 // Package octicons embeds Primer Octicon SVG files from the primer-octicons
 // subdirectory.
 //
